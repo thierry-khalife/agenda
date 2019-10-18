@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Formulaire - Web Agenda</title>
+<link rel="stylesheet" type="text/css" href="agenda.css">
+</head>
+<body>
+<section class="leftsidebar">
+     <section class="quote">
+		<img src="img/quote.png">
+	</section>
+    <section class="sidebartable">
+    	<p>You are adding a new event to your agenda, please fill the form on your right or go back to the agenda</p>
+    	<a href="agenda.html"><button type="submit">BACK TO AGENDA</button></a>
+    </section>
+</section>
+<section class="formulaire">
+	<section class="pinright">
+		<img src="img/pin.png">
+		<img src="img/pin.png">
+	</section>
+	<form class="forme" action="agenda.html">
+	<label for="text"><b>Titre</b></label>
+    <input type="text" placeholder="Tapez le titre de l'Activite" name="titre" required>
+    <label for="text"><b>Description</b></label>
+    <input type="text" placeholder="Tapez une Description" name="description" required>
+    <label for="date"><b>Date de l'activite</b></label>
+    <input type="date" name="dateactivite" required>  
+    <section>
+        <label for="categorie"><b>Categorie</b></label>
+        <input type="radio" id="imp" name="categorie" value="important" required>
+        <label for="important">IMPORTANT</label>
+        <input type="radio" id="wai" name="categorie" value="wait">
+        <label for="wait">CAN WAIT</label>
+    </section>
+    <label>Creneau horaire</label>
+      <select required>
+         <option value="">Veyuillez precisez le crenau de l'activité</option>
+         <option value = "1">00:00</option>
+         <option value = "2">01:00</option>
+         <option value = "3">02:00</option>
+         <option value = "4">03:00</option>
+         <option value = "5">04:00</option>
+         <option value = "1">05:00</option>
+         <option value = "2">06:00</option>
+         <option value = "3">07:00</option>
+         <option value = "4">08:00</option>
+         <option value = "5">09:00</option>
+         <option value = "1">10:00</option>
+         <option value = "2">11:00</option>
+         <option value = "3">12:00</option>
+         <option value = "4">13:00</option>
+         <option value = "5">14:00</option>
+         <option value = "1">15:00</option>
+         <option value = "2">16:00</option>
+         <option value = "3">17:00</option>
+         <option value = "4">18:00</option>
+         <option value = "5">19:00</option>
+         <option value = "1">20:00</option>
+         <option value = "2">21:00</option>
+         <option value = "3">22:00</option>
+         <option value = "4">23:00</option>
+     </select>
+    <label for="Notes">Notes:</label>
+    <textarea name="comment" form="usrform">Remarques sur l'activités</textarea>
+     <br>
+    <button type="submit" value="connexion">SUBMIT EVENT</button>
+    </form>
+</section>
+</body>
+</html>
